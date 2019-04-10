@@ -1,16 +1,18 @@
 #include<stdio.h>
+#include<limits.h>
 
-int count = 0;
-void hello(){
-    if(count == 10) return;
-    else{
-        printf("Why always, Hello World!!\n");
-        count ++;
-        hello();
+int max(int arr[]){
+    int i;
+    for(i=0;i<10;i++){
+        printf("\n%d\n",arr[i]);
     }
+    return INT_MIN;
 }
 void main()
 {
-    printf("Why always, Hello World!!\n");
-    hello();
+    int arr[] = {11,12,13,14,15,16,17,18,19,20};
+
+    //max(arr);
+    printf("\n%d\n",max(arr));
+
 }

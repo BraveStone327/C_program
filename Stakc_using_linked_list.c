@@ -50,6 +50,8 @@ int main()
     push(&root,10);
     push(&root,20);
     push(&root,30);
+    push(&root,40);
+    push(&root,50);
 
     printf("%d popped from stack\n",pop(&root));
     printf("Top element is %d\n",peek(root));
