@@ -2,6 +2,13 @@
 #include<string.h>
 #define STR_LEN 100
 
+/*
+* TEST CASE
+* X = AAACCGTGAGTTATTCGTTCTAGAA
+* Y = CACCCCTAAGGTACCTTTGGTTC
+* LCS LENGTH 13
+*/
+
 int static cache[STR_LEN][STR_LEN];
 
 int getMax(int x, int y){
