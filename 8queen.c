@@ -80,5 +80,5 @@ void main(void)
     printf("Enter Number of Row/Column in Board : ");
     scanf("%d", &n);
     nQueen(n);
-    printf("Total Soultion found for %d-Queen : %d\n",n,count);
+    printf("Total Solution found for %d-Queen : %d\n",n,count);
 }

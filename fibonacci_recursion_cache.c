@@ -1,15 +1,11 @@
 #include<stdio.h>
-
 #define MAX_SIZE 1001
-
 
 
 long static cache_fibo[MAX_SIZE];
 
 
-
 int fibonacci(long n)
-
 {
 
     //if(n<=1) return 1;
@@ -30,14 +26,11 @@ int fibonacci(long n)
 
     return cache_fibo[n];
 
-
-
 }
 
 
 
 void main(int argc, char const *argv[])
-
 {
 
     int fibo = atoi(argv[1]);
@@ -61,5 +54,4 @@ void main(int argc, char const *argv[])
     fibo = fibonacci(fibo);
 
     printf("Fibonacci = %d\n",fibo);
-
 }

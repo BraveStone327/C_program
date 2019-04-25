@@ -10,7 +10,7 @@ void main()
 
     int i,x;
 
-    x=sizeof(arr)/sizeof(arr[0]);
+    x=7;//sizeof(arr)/sizeof(arr[0]);
 
     for(i=0;i<x;i++){
 

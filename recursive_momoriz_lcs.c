@@ -1,4 +1,4 @@
-#include<stdio.h>
+ #include<stdio.h>
 #include<string.h>
 #define STR_LEN 100
 
@@ -27,7 +27,7 @@ int LCSLen(char *X, char *Y, int m, int n){
     else
         cache[m][n] = getMax(LCSLen(X,Y,m,n-1),LCSLen(X,Y,m-1,n));
 
-    return cache[n][n];
+    return cache[m][n];
 }
 
 void main()
@@ -50,6 +50,6 @@ void main()
         printf("\n");
     }*/
 
-    printf("\nLCS Length - %d\n",LCSLen(X,Y,m,n));
+    printf("\nLCS Length = %d\n",LCSLen(X,Y,m,n));
 
 }

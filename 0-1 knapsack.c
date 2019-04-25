@@ -4,12 +4,12 @@ int max(int a, int b){
     return (a>b)? a : b;
 }
 
-int knapsack(int W, int wt[], int val[],int n){
+int knapsack(int maxCapacity, int wt[], int val[],int size){
     int i,w;
-    int K[n+1][W+1];
+    int K[size+1][maxCapacity+1];
 
-    for(i=0;i<=n;i++){
-        for(w=0;w<=W;w++){
+    for(i=0;i<=size;i++){
+        for(w=0;w<=maxCapacity;w++){
             if(i == 0 || w == 0)
                 K[i][w] = 0;
             else if(wt[i-1] <= w)
@@ -19,18 +19,18 @@ int knapsack(int W, int wt[], int val[],int n){
         }
     }
 
-    return K[n][W];
+    return K[size][maxCapacity];
 }
 
 int main()
 {
-    int val[] = {60,100,120};
-    int wt[] = {10,20,30};
-    int W = 50;
+    int val[] = {60,10,20,100,120};
+    int wt[] = {10,20,30,40,50};
+    int maxWeight = 50;
 
     int n = sizeof(val)/sizeof(val[0]);
 
-    printf("%d\n",knapsack(W,wt,val,n));
+    printf("%d\n",knapsack(maxWeight,wt,val,n));
 
     return 0;
 }
