@@ -20,7 +20,7 @@ int exponentialSearch(int arr[], int size, int key)
 int binarySearch(int arr[], int left, int right, int key)
 {
     if(right >= left){
-        int mid = left + (right - left) / 2;
+        int mid = (left + right) / 2;
 
         if(arr[mid] == key)
             return mid;
